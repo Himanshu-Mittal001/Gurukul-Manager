@@ -20,7 +20,16 @@
   </header>
 
   <main>
-    <h2>View Transactions</h2>
+    <h2>Transaction History</h2>
+
+    <div id="dateFilterContainer">
+      <label for="fromDate">From Date: </label>
+      <input type="date" id="fromDate">
+      <label for="toDate">To Date: </label>
+      <input type="date" id="toDate">
+      <button onclick="filterTransactions()">Filter</button>
+    </div>
+
     <table class="records-table">
       <thead>
         <tr>
@@ -36,11 +45,11 @@
         <!-- Transaction rows will go here -->
       </tbody>
     </table>
-  </main>
 
-  <footer>
-    <p>&copy; Designed by Radhika</p>
-  </footer>
+    <footer>
+      <p>&copy; Designed by Radhika</p>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
