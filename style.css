@@ -1,9 +1,10 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   background-color: #00264d;
   color: white;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 body.light-mode {
@@ -64,19 +65,16 @@ nav ul li a:hover {
   border-radius: 50%;
 }
 
-/* New Record Input Table */
-#newRecordTable td input {
-  width: 100%;
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-#newRecordTable td button {
-  padding: 8px;
+/* Button Style */
+button {
+  padding: 8px 20px;
   background-color: #00796b;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #00494f;
 }
