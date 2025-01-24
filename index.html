@@ -25,8 +25,15 @@
       <tr>
         <td><input type="file" accept="image/*" id="imageInput"></td>
         <td><input type="text" id="nameInput" placeholder="Name"></td>
-        <td><input type="text" id="categoryInput" placeholder="Category"></td>
-        <td><input type="text" id="guardianInput" placeholder="Guardian/Date of Joining" oninput="toggleDateOfJoining()"></td>
+        <td>
+          <select id="categoryInput">
+            <option value="customer">Customer</option>
+            <option value="vendor">Vendor</option>
+            <option value="worker">Worker</option>
+          </select>
+        </td>
+        <td><input type="text" id="guardianInput" placeholder="Guardian/Date of Joining"></td>
+        <td><input type="text" id="addressInput" placeholder="Address"></td>
         <td><input type="text" id="contactInput" placeholder="Contact"></td>
         <td><button onclick="addRecord()">Add</button></td>
       </tr>
@@ -40,6 +47,7 @@
           <th>Name</th>
           <th>Category</th>
           <th>Guardian/Date of Joining</th>
+          <th>Address</th>
           <th>Contact</th>
           <th>Actions</th>
         </tr>
