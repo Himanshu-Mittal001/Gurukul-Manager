@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #00264d;
+  color: white;
+}
+
+body.light-mode {
+  background-color: #f0f8ff;
+  color: #00264d;
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #0056b3;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #004494;
+}
+
+/* Table Layout for Personal Records */
+.records-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.records-table th, .records-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.records-table th {
+  background-color: #00796b;
+  color: white;
+}
+
+.records-table td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* New Record Input Table */
+#newRecordTable td input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#newRecordTable td button {
+  padding: 8px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

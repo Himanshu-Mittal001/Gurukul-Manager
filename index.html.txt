@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Personal Records</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Manage Personal Records</h1>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul id="navList">
+        <li><a href="index.html">Personal Records</a></li>
+        <li><a href="transactions.html">Transactions</a></li>
+        <li><a href="transaction_history.html">Transaction History</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Add New Personal Record</h2>
+    <table class="records-table" id="newRecordTable">
+      <tr>
+        <td><input type="file" accept="image/*" id="imageInput"></td>
+        <td><input type="text" id="nameInput" placeholder="Name"></td>
+        <td><input type="text" id="categoryInput" placeholder="Category"></td>
+        <td><input type="text" id="guardianInput" placeholder="Guardian/Date of Joining" oninput="toggleDateOfJoining()"></td>
+        <td><input type="text" id="contactInput" placeholder="Contact"></td>
+        <td><button onclick="addRecord()">Add</button></td>
+      </tr>
+    </table>
+
+    <h2>Personal Records</h2>
+    <table class="records-table" id="recordsTable">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Guardian/Date of Joining</th>
+          <th>Contact</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be added here dynamically -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; Designed by Radhika</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
